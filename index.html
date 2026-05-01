@@ -32,7 +32,6 @@ header{padding:16px 20px;display:flex;align-items:center;justify-content:space-b
 .setup-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:14px}
 .input-group label{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);margin-bottom:5px;font-family:'Orbitron',monospace}
 .input-group input,.input-group select{width:100%;background:rgba(0,245,255,0.05);border:1px solid rgba(0,245,255,0.2);border-radius:8px;padding:9px 12px;color:var(--neon-cyan);font-family:'Share Tech Mono',monospace;font-size:13px;outline:none;transition:all 0.3s}
-.input-group input:focus,.input-group select:focus{border-color:var(--neon-cyan);box-shadow:0 0 12px rgba(0,245,255,0.2)}
 .input-group select option{background:#0a1428;color:var(--neon-cyan)}
 .metrics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
 .metric-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:16px;backdrop-filter:blur(20px);position:relative;overflow:hidden;transition:transform 0.3s}
@@ -46,12 +45,7 @@ header{padding:16px 20px;display:flex;align-items:center;justify-content:space-b
 .metric-icon{font-size:22px;margin-bottom:6px}
 .metric-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);font-family:'Orbitron',monospace;margin-bottom:4px}
 .metric-value{font-family:'Orbitron',monospace;font-size:17px;font-weight:700}
-.metric-card.cyan .metric-value{color:var(--neon-cyan);text-shadow:0 0 10px rgba(0,245,255,0.4)}
-.metric-card.green .metric-value{color:var(--neon-green);text-shadow:0 0 10px rgba(57,255,20,0.4)}
-.metric-card.orange .metric-value{color:var(--neon-orange);text-shadow:0 0 10px rgba(255,107,0,0.4)}
-.metric-card.pink .metric-value{color:var(--neon-pink);text-shadow:0 0 10px rgba(255,0,110,0.4)}
-.metric-card.yellow .metric-value{color:var(--neon-yellow);text-shadow:0 0 10px rgba(255,224,0,0.4)}
-.metric-card.purple .metric-value{color:var(--neon-purple);text-shadow:0 0 10px rgba(191,0,255,0.4)}
+.metric-card.cyan .metric-value{color:var(--neon-cyan)}.metric-card.green .metric-value{color:var(--neon-green)}.metric-card.orange .metric-value{color:var(--neon-orange)}.metric-card.pink .metric-value{color:var(--neon-pink)}.metric-card.yellow .metric-value{color:var(--neon-yellow)}.metric-card.purple .metric-value{color:var(--neon-purple)}
 .metric-sub{font-size:10px;color:var(--text-dim);margin-top:3px}
 .trade-calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
 .tp-row{display:grid;grid-template-columns:60px 1fr 1fr 1fr;gap:8px;align-items:center;padding:9px;border-radius:8px;margin-bottom:7px}
@@ -64,19 +58,16 @@ header{padding:16px 20px;display:flex;align-items:center;justify-content:space-b
 .tp-row input{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:6px 8px;color:var(--text-primary);font-family:'Share Tech Mono',monospace;font-size:12px;outline:none;width:100%}
 .btn{padding:9px 18px;border-radius:8px;border:none;cursor:pointer;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:all 0.3s}
 .btn-cyan{background:linear-gradient(135deg,rgba(0,245,255,0.2),rgba(0,245,255,0.1));border:1px solid var(--neon-cyan);color:var(--neon-cyan)}
-.btn-cyan:hover{background:rgba(0,245,255,0.25);box-shadow:0 0 20px rgba(0,245,255,0.4)}
 .btn-green{background:linear-gradient(135deg,rgba(57,255,20,0.2),rgba(57,255,20,0.1));border:1px solid var(--neon-green);color:var(--neon-green)}
-.btn-green:hover{background:rgba(57,255,20,0.25);box-shadow:0 0 20px rgba(57,255,20,0.4)}
 .btn-orange{background:linear-gradient(135deg,rgba(255,107,0,0.2),rgba(255,107,0,0.1));border:1px solid var(--neon-orange);color:var(--neon-orange)}
 .btn-pink{background:linear-gradient(135deg,rgba(255,0,110,0.2),rgba(255,0,110,0.1));border:1px solid var(--neon-pink);color:var(--neon-pink)}
 .btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .table-wrap{overflow-x:auto;border-radius:10px}
 table{width:100%;border-collapse:collapse;font-family:'Share Tech Mono',monospace;font-size:11px}
 thead th{background:rgba(0,245,255,0.08);color:var(--neon-cyan);font-family:'Orbitron',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:10px 8px;text-align:center;border-bottom:1px solid rgba(0,245,255,0.2);white-space:nowrap}
-tbody tr{border-bottom:1px solid rgba(0,245,255,0.06);transition:background 0.2s}
-tbody tr:hover{background:rgba(0,245,255,0.04)}
+tbody tr{border-bottom:1px solid rgba(0,245,255,0.06)}
 tbody td{padding:9px 8px;text-align:center;color:var(--text-primary);white-space:nowrap}
-.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:9px;font-weight:700;letter-spacing:1px;font-family:'Orbitron',monospace}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:9px;font-weight:700;font-family:'Orbitron',monospace}
 .badge-win{background:rgba(57,255,20,0.15);color:var(--neon-green);border:1px solid rgba(57,255,20,0.3)}
 .badge-loss{background:rgba(255,0,110,0.15);color:var(--neon-pink);border:1px solid rgba(255,0,110,0.3)}
 .badge-avg{background:rgba(255,107,0,0.15);color:var(--neon-orange);border:1px solid rgba(255,107,0,0.3)}
@@ -87,26 +78,30 @@ tbody td{padding:9px 8px;text-align:center;color:var(--text-primary);white-space
 .projection-bar{display:flex;align-items:center;gap:10px;margin-bottom:7px}
 .proj-month{font-family:'Orbitron',monospace;font-size:9px;color:var(--text-dim);width:50px;flex-shrink:0}
 .proj-bar-wrap{flex:1;height:16px;background:rgba(255,255,255,0.05);border-radius:8px;overflow:hidden}
-.proj-bar-fill{height:100%;border-radius:8px;transition:width 1s ease}
+.proj-bar-fill{height:100%;border-radius:8px}
 .proj-val{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--neon-cyan);width:80px;text-align:right;flex-shrink:0}
 .trade-form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
 .tab-row{display:flex;gap:7px;margin-bottom:16px;flex-wrap:wrap}
 .tab-btn{padding:7px 14px;border-radius:7px;border:1px solid rgba(0,245,255,0.2);background:transparent;color:var(--text-dim);font-family:'Orbitron',monospace;font-size:9px;letter-spacing:2px;cursor:pointer;transition:all 0.3s}
-.tab-btn.active{background:rgba(0,245,255,0.1);border-color:var(--neon-cyan);color:var(--neon-cyan);box-shadow:0 0 10px rgba(0,245,255,0.2)}
+.tab-btn.active{background:rgba(0,245,255,0.1);border-color:var(--neon-cyan);color:var(--neon-cyan)}
 .guide-box{background:rgba(191,0,255,0.05);border:1px solid rgba(191,0,255,0.2);border-radius:14px;padding:20px;margin-bottom:20px}
 .guide-box h3{font-family:'Orbitron',monospace;color:var(--neon-purple);font-size:12px;letter-spacing:2px;margin-bottom:14px}
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .guide-step{display:flex;gap:10px;align-items:flex-start}
-.step-num{width:26px;height:26px;background:linear-gradient(135deg,#bf00ff,#7700cc);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;flex-shrink:0;box-shadow:0 0 10px rgba(191,0,255,0.4)}
+.step-num{width:26px;height:26px;background:linear-gradient(135deg,#bf00ff,#7700cc);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;flex-shrink:0}
 .step-text h4{font-size:12px;font-weight:700;color:var(--neon-purple);margin-bottom:2px}
 .step-text p{font-size:11px;color:var(--text-dim);line-height:1.5}
 .ticker-wrap{background:rgba(0,245,255,0.05);border:1px solid rgba(0,245,255,0.15);border-radius:8px;padding:7px 14px;display:flex;gap:24px;overflow-x:auto;margin-bottom:20px;font-family:'Share Tech Mono',monospace;font-size:11px}
 .ticker-item{display:flex;gap:7px;align-items:center;white-space:nowrap}
 .ticker-label{color:var(--text-dim)}.ticker-val{color:var(--neon-cyan)}
 .ticker-change.pos{color:var(--neon-green)}.ticker-change.neg{color:var(--neon-pink)}
-.toast{position:fixed;bottom:24px;right:20px;background:rgba(10,20,40,0.95);border:1px solid var(--neon-green);border-radius:10px;padding:12px 18px;color:var(--neon-green);font-family:'Orbitron',monospace;font-size:10px;letter-spacing:1px;z-index:9999;transform:translateX(200%);transition:transform 0.4s ease;box-shadow:0 0 20px rgba(57,255,20,0.3)}
+.toast{position:fixed;bottom:24px;right:20px;background:rgba(10,20,40,0.95);border:1px solid var(--neon-green);border-radius:10px;padding:12px 18px;color:var(--neon-green);font-family:'Orbitron',monospace;font-size:10px;z-index:9999;transform:translateX(200%);transition:transform 0.4s ease}
 .toast.show{transform:translateX(0)}
-@media(max-width:768px){.trade-calc-grid{grid-template-columns:1fr}.charts-grid{grid-template-columns:1fr}.tp-row{grid-template-columns:55px 1fr 1fr}}
+.btc-price-box{background:rgba(255,107,0,0.08);border:1px solid rgba(255,107,0,0.3);border-radius:10px;padding:10px 16px;display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.btc-live-price{font-family:'Orbitron',monospace;font-size:22px;font-weight:900;color:var(--neon-orange);text-shadow:0 0 20px rgba(255,107,0,0.5)}
+.btc-live-label{font-size:10px;color:var(--text-dim);letter-spacing:2px}
+.btc-update{font-size:10px;color:var(--text-dim);margin-left:auto}
+@media(max-width:768px){.trade-calc-grid{grid-template-columns:1fr}.charts-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -117,7 +112,7 @@ tbody td{padding:9px 8px;text-align:center;color:var(--text-primary);white-space
 <div class="logo-text"><h1>BTC TRADE TRACKER</h1><span>Compound Profit Dashboard</span></div>
 </div>
 <div class="header-actions">
-<div class="live-badge"><div class="live-dot"></div>LIVE</div>
+<div class="live-badge"><div class="live-dot" id="liveDot"></div>BTC LIVE</div>
 <button class="btn btn-cyan" onclick="document.getElementById('uploadInput').click()">⬆ Upload Excel</button>
 <input type="file" id="uploadInput" accept=".xlsx,.xls" style="display:none" onchange="handleUpload(event)">
 <button class="btn btn-green" onclick="downloadExcel()">⬇ Download</button>
@@ -125,14 +120,37 @@ tbody td{padding:9px 8px;text-align:center;color:var(--text-primary);white-space
 </div>
 </header>
 <div class="container">
+
+<!-- BTC LIVE PRICE BOX -->
+<div class="btc-price-box">
+<div>
+<div class="btc-live-label">🔴 HARGA BTC LIVE (CoinGecko)</div>
+<div class="btc-live-price" id="btcLivePrice">Memuat...</div>
+</div>
+<div>
+<div class="btc-live-label">PERUBAHAN 24J</div>
+<div style="font-family:'Orbitron';font-size:16px;font-weight:700" id="btcLiveChange">...</div>
+</div>
+<div>
+<div class="btc-live-label">HIGH 24J</div>
+<div style="font-family:'Share Tech Mono';font-size:14px;color:var(--neon-green)" id="btcHigh">...</div>
+</div>
+<div>
+<div class="btc-live-label">LOW 24J</div>
+<div style="font-family:'Share Tech Mono';font-size:14px;color:var(--neon-pink)" id="btcLow">...</div>
+</div>
+<div class="btc-update" id="btcUpdateTime">Update: --</div>
+</div>
+
 <div class="ticker-wrap">
-<div class="ticker-item"><span class="ticker-label">BTC/USDT</span><span class="ticker-val" id="btcPrice">$67,420</span><span class="ticker-change pos" id="btcChange">+2.14%</span></div>
+<div class="ticker-item"><span class="ticker-label">BTC/USDT 🔴LIVE</span><span class="ticker-val" id="btcPrice">Memuat...</span><span class="ticker-change pos" id="btcChange">+0.00%</span></div>
 <div class="ticker-item"><span class="ticker-label">MODAL</span><span class="ticker-val" id="tickerModal">$1,000</span></div>
 <div class="ticker-item"><span class="ticker-label">AKTIF</span><span class="ticker-val" id="tickerModalAktif">$1,000</span></div>
 <div class="ticker-item"><span class="ticker-label">PROFIT</span><span class="ticker-val profit-pos" id="tickerProfit">$0</span></div>
 <div class="ticker-item"><span class="ticker-label">TRADES</span><span class="ticker-val" id="tickerTrades">0</span></div>
 <div class="ticker-item"><span class="ticker-label">WIN RATE</span><span class="ticker-val" id="tickerWinRate">0%</span></div>
 </div>
+
 <div class="section-title">⚙ Pengaturan Modal & Strategi</div>
 <div class="card">
 <div class="setup-grid">
@@ -141,282 +159,31 @@ tbody td{padding:9px 8px;text-align:center;color:var(--text-primary);white-space
 <div class="input-group"><label>Ambang Avg Down (poin)</label><input type="number" id="ambangAvg" value="2500" oninput="recalcAll()"></div>
 <div class="input-group"><label>Multipli Average (x)</label><input type="number" id="multiAvg" value="2" oninput="recalcAll()"></div>
 <div class="input-group"><label>Target Profit/Bulan (%)</label><input type="number" id="targetBulan" value="15" oninput="recalcAll()"></div>
-<div class="input-group"><label>Kompound</label><select id="kompound" onchange="recalcAll()"><option value="daily">Setiap Hari</option><option value="trade">Setiap Trade</option><option value="weekly">Setiap Minggu</option></select></div>
-<div class="input-group"><label>Harga Entry BTC ($)</label><input type="number" id="hargaEntry" value="67420" oninput="recalcAll()"></div>
+<div class="input-group"><label>Kompound</label><select id="kompound"><option value="daily">Setiap Hari</option><option value="trade">Setiap Trade</option></select></div>
+<div class="input-group"><label>Harga Entry BTC ($)</label><input type="number" id="hargaEntry" value="0" oninput="recalcAll();this.dataset.manual='true'"></div>
 <div class="input-group"><label>Arah Trade</label><select id="arahTrade" onchange="recalcAll()"><option value="LONG">LONG (Beli)</option><option value="SHORT">SHORT (Jual)</option></select></div>
 </div>
 <button class="btn btn-cyan" onclick="recalcAll()">🔄 Hitung Ulang</button>
 </div>
+
 <div class="section-title">📊 Overview Modal & Posisi</div>
 <div class="metrics-grid">
 <div class="metric-card cyan"><div class="metric-icon">💰</div><div class="metric-label">Modal Aktif</div><div class="metric-value" id="m_modalAktif">$1,000</div><div class="metric-sub" id="m_modalAwalSub">Modal awal: $1,000</div></div>
 <div class="metric-card green"><div class="metric-icon">📈</div><div class="metric-label">1 Lot Posisi</div><div class="metric-value" id="m_lotSize">$100</div><div class="metric-sub" id="m_lotSub">1/10 dari modal</div></div>
-<div class="metric-card orange"><div class="metric-icon">🔄</div><div class="metric-label">Average Down</div><div class="metric-value" id="m_avgDown">$200</div><div class="metric-sub" id="m_avgSub">2x lot jika -2500 poin</div></div>
+<div class="metric-card orange"><div class="metric-icon">🔄</div><div class="metric-label">Average Down</div><div class="metric-value" id="m_avgDown">$200</div><div class="metric-sub" id="m_avgSub">2x lot</div></div>
 <div class="metric-card yellow"><div class="metric-icon">🎯</div><div class="metric-label">Target/Bulan</div><div class="metric-value" id="m_targetBln">$150</div><div class="metric-sub">15% dari modal</div></div>
 <div class="metric-card purple"><div class="metric-icon">⚡</div><div class="metric-label">Proyeksi 1 Tahun</div><div class="metric-value" id="m_proj1yr">$0</div><div class="metric-sub">Dengan compound</div></div>
-<div class="metric-card pink"><div class="metric-icon">🛡️</div><div class="metric-label">Total Profit</div><div class="metric-value" id="m_totalProfit">$0.00</div><div class="metric-sub" id="m_profitPct">0.00% dari modal</div></div>
+<div class="metric-card pink"><div class="metric-icon">🛡️</div><div class="metric-label">Total Profit</div><div class="metric-value" id="m_totalProfit">$0.00</div><div class="metric-sub" id="m_profitPct">0.00%</div></div>
 </div>
+
 <div class="section-title">🎯 Kalkulator TP & SL</div>
 <div class="trade-calc-grid">
 <div class="card" style="margin-bottom:0">
 <div class="tp-row tp1"><span class="tp-label">TP 1</span><div class="input-group" style="margin:0"><input type="number" id="tp1_pct" value="0.5" step="0.1" oninput="recalcTP()"></div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-green)" id="tp1_price">—</div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-green)" id="tp1_profit">—</div></div>
-<div style="font-size:9px;color:var(--text-dim);margin-bottom:7px;padding-left:8px">% naik | Harga TP | Est. Profit</div>
+<div style="font-size:9px;color:var(--text-dim);margin-bottom:7px;padding-left:8px">% | Harga TP | Est. Profit</div>
 <div class="tp-row tp2"><span class="tp-label">TP 2</span><div class="input-group" style="margin:0"><input type="number" id="tp2_pct" value="1.0" step="0.1" oninput="recalcTP()"></div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-cyan)" id="tp2_price">—</div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-cyan)" id="tp2_profit">—</div></div>
 <div class="tp-row tp3"><span class="tp-label">TP 3</span><div class="input-group" style="margin:0"><input type="number" id="tp3_pct" value="2.0" step="0.1" oninput="recalcTP()"></div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-yellow)" id="tp3_price">—</div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-yellow)" id="tp3_profit">—</div></div>
 <div class="tp-row sl"><span class="tp-label">SL</span><div class="input-group" style="margin:0"><input type="number" id="sl_pct" value="1.5" step="0.1" oninput="recalcTP()"></div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-pink)" id="sl_price">—</div><div style="font-family:'Share Tech Mono';font-size:11px;color:var(--neon-pink)" id="sl_loss">—</div></div>
 </div>
 <div class="card" style="margin-bottom:0">
-<div style="font-family:'Orbitron';font-size:10px;color:var(--neon-cyan);letter-spacing:1px;margin-bottom:12px">💡 RINGKASAN POSISI</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
-<div><div style="font-size:9px;color:var(--text-dim);margin-bottom:3px">ENTRY PRICE</div><div style="font-family:'Share Tech Mono';font-size:15px;color:var(--neon-cyan)" id="sumEntry">$67,420</div></div>
-<div><div style="font-size:9px;color:var(--text-dim);margin-bottom:3px">ARAH</div><div style="font-family:'Orbitron';font-size:15px;color:var(--neon-green)" id="sumDir">LONG ↑</div></div>
-<div><div style="font-size:9px;color:var(--text-dim);margin-bottom:3px">1 LOT</div><div style="font-family:'Share Tech Mono';font-size:15px;color:var(--neon-orange)" id="sumLot">$100</div></div>
-<div><div style="font-size:9px;color:var(--text-dim);margin-bottom:3px">AVG DOWN IF</div><div style="font-family:'Share Tech Mono';font-size:13px;color:var(--neon-pink)" id="sumAvgTrigger">$64,920</div></div>
-</div>
-<div style="padding:10px;background:rgba(57,255,20,0.07);border:1px solid rgba(57,255,20,0.2);border-radius:8px;font-size:11px;color:var(--text-dim);line-height:1.7" id="strategyText">
-Entry 1 Lot ($100) @ <span style="color:var(--neon-cyan)" id="strat_entry">$67,420</span><br>
-Jika turun <span style="color:var(--neon-pink)" id="strat_points">2,500</span> poin → Avg Down<br>
-Tambah <span style="color:var(--neon-orange)" id="strat_avgLot">2 Lot ($200)</span> @ <span style="color:var(--neon-pink)" id="strat_avgPrice">$64,920</span><br>
-Total: <span style="color:var(--neon-yellow)" id="strat_total">3 Lot ($300)</span>
-</div>
-</div>
-</div>
-<div class="section-title">📈 Proyeksi Compound 12 Bulan</div>
-<div class="charts-grid">
-<div class="chart-box"><canvas id="compoundChart" height="200"></canvas></div>
-<div class="chart-box"><div style="font-family:'Orbitron';font-size:10px;color:var(--neon-purple);letter-spacing:2px;margin-bottom:12px">PROYEKSI MODAL PER BULAN</div><div id="projectionBars"></div></div>
-</div>
-<div class="section-title">➕ Tambah Trade</div>
-<div class="card">
-<div class="trade-form-grid">
-<div class="input-group"><label>Tanggal</label><input type="date" id="f_tanggal"></div>
-<div class="input-group"><label>Arah</label><select id="f_arah"><option>LONG</option><option>SHORT</option></select></div>
-<div class="input-group"><label>Tipe</label><select id="f_tipe"><option>ENTRY</option><option>AVERAGE DOWN</option><option>CLOSE TP1</option><option>CLOSE TP2</option><option>CLOSE TP3</option><option>CLOSE SL</option></select></div>
-<div class="input-group"><label>Harga Entry ($)</label><input type="number" id="f_entry" placeholder="67420"></div>
-<div class="input-group"><label>Harga Close ($)</label><input type="number" id="f_close" placeholder="67630"></div>
-<div class="input-group"><label>Lot ($)</label><input type="number" id="f_lot" placeholder="100"></div>
-<div class="input-group"><label>Profit/Loss ($)</label><input type="number" id="f_profit" placeholder="2.10"></div>
-<div class="input-group"><label>Catatan</label><input type="text" id="f_note" placeholder="TP1 hit..."></div>
-</div>
-<div class="btn-row">
-<button class="btn btn-green" onclick="addTrade()">✅ Simpan Trade</button>
-<button class="btn btn-cyan" onclick="autoFillLot()">🤖 Auto Isi Lot</button>
-<button class="btn btn-pink" onclick="clearForm()">🗑️ Clear</button>
-</div>
-</div>
-<div class="section-title">📋 Log Trade History</div>
-<div class="card">
-<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-<div class="tab-row" style="margin:0">
-<button class="tab-btn active" onclick="filterTrades('all',this)">Semua</button>
-<button class="tab-btn" onclick="filterTrades('LONG',this)">LONG</button>
-<button class="tab-btn" onclick="filterTrades('SHORT',this)">SHORT</button>
-<button class="tab-btn" onclick="filterTrades('WIN',this)">Profit</button>
-<button class="tab-btn" onclick="filterTrades('LOSS',this)">Loss</button>
-</div>
-<button class="btn btn-pink" onclick="clearAllTrades()" style="font-size:9px">🗑️ Hapus Semua</button>
-</div>
-<div class="table-wrap">
-<table>
-<thead><tr><th>#</th><th>Tanggal</th><th>Arah</th><th>Tipe</th><th>Entry</th><th>Close</th><th>Lot</th><th>P/L ($)</th><th>Modal</th><th>ROI%</th><th>Note</th><th>Del</th></tr></thead>
-<tbody id="tradeTableBody"><tr><td colspan="12" style="color:var(--text-dim);padding:24px;font-size:12px">Belum ada trade. Tambahkan atau upload Excel.</td></tr></tbody>
-</table>
-</div>
-</div>
-<div class="section-title">📖 Panduan Pengisian</div>
-<div class="guide-box">
-<h3>📚 PANDUAN LENGKAP TRADING TRACKER</h3>
-<div class="guide-grid">
-<div class="guide-step"><div class="step-num">1</div><div class="step-text"><h4>Download Template</h4><p>Klik tombol "Template" di header untuk download file Excel kosong yang sudah berformat sesuai kolom dashboard.</p></div></div>
-<div class="guide-step"><div class="step-num">2</div><div class="step-text"><h4>Kolom Wajib Diisi</h4><p>Tanggal, Arah (LONG/SHORT), Tipe, Harga Entry, Harga Close, Lot ($), Profit/Loss ($)</p></div></div>
-<div class="guide-step"><div class="step-num">3</div><div class="step-text"><h4>Strategi Entry (1 Lot)</h4><p>Modal $1000 ÷ 10 = $100 per lot. Average down dengan 2x lot jika BTC turun 2.000–3.000 poin.</p></div></div>
-<div class="guide-step"><div class="step-num">4</div><div class="step-text"><h4>TP & SL</h4><p>TP1 = +0.5% | TP2 = +1.0% | TP3 = +2.0% dari entry. SL = -1.5% dari entry.</p></div></div>
-<div class="guide-step"><div class="step-num">5</div><div class="step-text"><h4>Compound Profit</h4><p>Setiap profit langsung ditambah ke modal aktif → lot size berikutnya otomatis membesar.</p></div></div>
-<div class="guide-step"><div class="step-num">6</div><div class="step-text"><h4>Upload Excel</h4><p>Setelah isi data di Excel, klik "Upload Excel". Dashboard otomatis sinkron semua data.</p></div></div>
-<div class="guide-step"><div class="step-num">7</div><div class="step-text"><h4>Download Data</h4><p>Klik "Download" untuk simpan semua trade ke file Excel baru.</p></div></div>
-<div class="guide-step"><div class="step-num">8</div><div class="step-text"><h4>Target 10–20%/Bulan</h4><p>Dengan compound 15%/bulan selama 12 bulan, $1.000 bisa tumbuh menjadi ±$5.350+!</p></div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="toast" id="toast">✅ Tersimpan!</div>
-<script>
-let trades=JSON.parse(localStorage.getItem('btc_trades')||'[]');
-let currentFilter='all';
-let compoundChart=null;
-window.onload=()=>{
-document.getElementById('f_tanggal').value=new Date().toISOString().split('T')[0];
-recalcAll();renderTable();initChart();animateTicker();
-};
-function recalcAll(){
-const modal=parseFloat(document.getElementById('modalAwal').value)||1000;
-const pembagi=parseFloat(document.getElementById('pembagi').value)||10;
-const ambang=parseFloat(document.getElementById('ambangAvg').value)||2500;
-const multi=parseFloat(document.getElementById('multiAvg').value)||2;
-const target=parseFloat(document.getElementById('targetBulan').value)||15;
-const entry=parseFloat(document.getElementById('hargaEntry').value)||67420;
-const arah=document.getElementById('arahTrade').value;
-const totalProfit=trades.reduce((s,t)=>s+(parseFloat(t.profit)||0),0);
-const modalAktif=modal+totalProfit;
-const lotAktif=modalAktif/pembagi;
-const avgTrigger=arah==='LONG'?entry-ambang:entry+ambang;
-document.getElementById('m_modalAktif').textContent='$'+fmtN(modalAktif);
-document.getElementById('m_modalAwalSub').textContent='Modal awal: $'+fmtN(modal);
-document.getElementById('m_lotSize').textContent='$'+fmtN(lotAktif);
-document.getElementById('m_lotSub').textContent='1/'+pembagi+' dari modal aktif';
-document.getElementById('m_avgDown').textContent='$'+fmtN(lotAktif*multi);
-document.getElementById('m_avgSub').textContent=multi+'x lot jika ±'+fmtN(ambang)+' poin';
-document.getElementById('m_targetBln').textContent='$'+fmtN(modalAktif*target/100);
-let proj=modalAktif;for(let i=0;i<12;i++)proj*=(1+target/100);
-document.getElementById('m_proj1yr').textContent='$'+fmtN(proj);
-document.getElementById('m_totalProfit').textContent=(totalProfit>=0?'+':'')+'$'+fmtN(totalProfit,2);
-document.getElementById('m_profitPct').textContent=fmtN(totalProfit/modal*100,2)+'% dari modal awal';
-document.getElementById('tickerModal').textContent='$'+fmtN(modal);
-document.getElementById('tickerModalAktif').textContent='$'+fmtN(modalAktif);
-document.getElementById('tickerProfit').textContent=(totalProfit>=0?'+':'')+'$'+fmtN(totalProfit);
-const wins=trades.filter(t=>(parseFloat(t.profit)||0)>0).length;
-document.getElementById('tickerTrades').textContent=trades.length;
-document.getElementById('tickerWinRate').textContent=trades.length?Math.round(wins/trades.length*100)+'%':'0%';
-document.getElementById('sumEntry').textContent='$'+fmtN(entry);
-document.getElementById('sumDir').textContent=arah==='LONG'?'LONG ↑':'SHORT ↓';
-document.getElementById('sumDir').style.color=arah==='LONG'?'var(--neon-green)':'var(--neon-pink)';
-document.getElementById('sumLot').textContent='$'+fmtN(lotAktif);
-document.getElementById('sumAvgTrigger').textContent='$'+fmtN(avgTrigger);
-document.getElementById('strat_entry').textContent='$'+fmtN(entry);
-document.getElementById('strat_points').textContent=fmtN(ambang);
-document.getElementById('strat_avgLot').textContent=multi+' Lot ($'+fmtN(lotAktif*multi)+')';
-document.getElementById('strat_avgPrice').textContent='$'+fmtN(avgTrigger);
-document.getElementById('strat_total').textContent=(1+multi)+' Lot ($'+fmtN(lotAktif*(1+multi))+')';
-recalcTP();buildProjection(modal,target);updateChart(modal,target);
-}
-function recalcTP(){
-const entry=parseFloat(document.getElementById('hargaEntry').value)||67420;
-const arah=document.getElementById('arahTrade').value;
-const modal=parseFloat(document.getElementById('modalAwal').value)||1000;
-const pembagi=parseFloat(document.getElementById('pembagi').value)||10;
-const totalProfit=trades.reduce((s,t)=>s+(parseFloat(t.profit)||0),0);
-const lotSize=(modal+totalProfit)/pembagi;
-const sign=arah==='LONG'?1:-1;
-[['tp1','neon-green'],['tp2','neon-cyan'],['tp3','neon-yellow']].forEach(([tp,c])=>{
-const pct=parseFloat(document.getElementById(tp+'_pct').value)||0;
-document.getElementById(tp+'_price').textContent='$'+fmtN(entry*(1+sign*pct/100));
-document.getElementById(tp+'_profit').textContent='+$'+fmtN(lotSize*pct/100,2);
-});
-const slPct=parseFloat(document.getElementById('sl_pct').value)||1.5;
-const slPrice=entry*(1+(-sign)*slPct/100);
-document.getElementById('sl_price').textContent='$'+fmtN(slPrice);
-document.getElementById('sl_loss').textContent='-$'+fmtN(lotSize*slPct/100,2);
-}
-function buildProjection(modal,target){
-const colors=['#00f5ff','#39ff14','#ffe000','#ff6b00','#bf00ff','#ff006e','#00f5ff','#39ff14','#ffe000','#ff6b00','#bf00ff','#ff006e'];
-let html='',current=modal;
-const maxVal=modal*Math.pow(1+target/100,12);
-for(let i=1;i<=12;i++){
-current*=(1+target/100);
-const pct=(current/maxVal)*100;
-html+=`<div class="projection-bar"><div class="proj-month">BLN ${i}</div><div class="proj-bar-wrap"><div class="proj-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,${colors[i-1]},${colors[i%12]})"></div></div><div class="proj-val">$${fmtN(current)}</div></div>`;
-}
-document.getElementById('projectionBars').innerHTML=html;
-}
-function initChart(){
-const ctx=document.getElementById('compoundChart').getContext('2d');
-compoundChart=new Chart(ctx,{type:'line',data:{labels:[],datasets:[]},options:{responsive:true,plugins:{legend:{labels:{color:'#7ba7bc'}},title:{display:true,text:'Proyeksi Compound 12 Bulan',color:'#00f5ff',font:{family:'Orbitron',size:11}}},scales:{x:{ticks:{color:'#7ba7bc'},grid:{color:'rgba(0,245,255,0.05)'}},y:{ticks:{color:'#7ba7bc',callback:v=>'$'+fmtN(v)},grid:{color:'rgba(0,245,255,0.05)'}}}}});
-updateChart(1000,15);
-}
-function updateChart(modal,target){
-if(!compoundChart)return;
-const labels=['Awal',...Array.from({length:12},(_,i)=>`Bln ${i+1}`)];
-const data=[modal];let cur=modal;
-for(let i=0;i<12;i++){cur*=(1+target/100);data.push(Math.round(cur));}
-compoundChart.data.labels=labels;
-compoundChart.data.datasets=[{label:'Modal+Compound',data,borderColor:'#00f5ff',backgroundColor:'rgba(0,245,255,0.08)',fill:true,tension:0.4,pointBackgroundColor:'#00f5ff',pointRadius:4}];
-compoundChart.update();
-}
-function addTrade(){
-const t={id:Date.now(),tanggal:document.getElementById('f_tanggal').value,arah:document.getElementById('f_arah').value,tipe:document.getElementById('f_tipe').value,entry:parseFloat(document.getElementById('f_entry').value)||0,close:parseFloat(document.getElementById('f_close').value)||0,lot:parseFloat(document.getElementById('f_lot').value)||0,profit:parseFloat(document.getElementById('f_profit').value)||0,note:document.getElementById('f_note').value};
-if(!t.lot){showToast('⚠️ Lot tidak boleh 0!','pink');return;}
-trades.push(t);saveTrades();renderTable();recalcAll();clearForm();showToast('✅ Trade tersimpan!');
-}
-function autoFillLot(){
-const modal=parseFloat(document.getElementById('modalAwal').value)||1000;
-const pembagi=parseFloat(document.getElementById('pembagi').value)||10;
-const totalProfit=trades.reduce((s,t)=>s+(parseFloat(t.profit)||0),0);
-const lot=Math.round((modal+totalProfit)/pembagi*100)/100;
-document.getElementById('f_lot').value=lot;
-document.getElementById('f_arah').value=document.getElementById('arahTrade').value;
-document.getElementById('f_entry').value=document.getElementById('hargaEntry').value;
-showToast('🤖 Lot: $'+lot);
-}
-function deleteTrade(id){trades=trades.filter(t=>t.id!==id);saveTrades();renderTable();recalcAll();showToast('🗑️ Dihapus');}
-function clearAllTrades(){if(!confirm('Hapus SEMUA?'))return;trades=[];saveTrades();renderTable();recalcAll();showToast('🗑️ Semua dihapus','pink');}
-function filterTrades(f,btn){currentFilter=f;document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderTable();}
-function renderTable(){
-const tbody=document.getElementById('tradeTableBody');
-let filtered=trades;
-if(currentFilter==='LONG')filtered=trades.filter(t=>t.arah==='LONG');
-else if(currentFilter==='SHORT')filtered=trades.filter(t=>t.arah==='SHORT');
-else if(currentFilter==='WIN')filtered=trades.filter(t=>(parseFloat(t.profit)||0)>0);
-else if(currentFilter==='LOSS')filtered=trades.filter(t=>(parseFloat(t.profit)||0)<0);
-if(!filtered.length){tbody.innerHTML='<tr><td colspan="12" style="color:var(--text-dim);padding:24px;font-size:12px">Tidak ada data.</td></tr>';return;}
-const modal=parseFloat(document.getElementById('modalAwal').value)||1000;
-let running=modal;
-tbody.innerHTML=filtered.map((t,i)=>{
-running+=(parseFloat(t.profit)||0);
-const p=parseFloat(t.profit)||0;
-const roi=t.lot?(p/t.lot*100).toFixed(2):'0.00';
-const isProfit=p>=0;
-const bc=t.tipe.includes('SL')?'badge-loss':t.tipe.includes('AVG')?'badge-avg':t.tipe.includes('CLOSE')?'badge-win':'badge-open';
-return`<tr><td>${i+1}</td><td>${t.tanggal}</td><td><span class="badge" style="${t.arah==='LONG'?'background:rgba(57,255,20,0.15);color:var(--neon-green);border:1px solid rgba(57,255,20,0.3)':'background:rgba(255,0,110,0.15);color:var(--neon-pink);border:1px solid rgba(255,0,110,0.3)'}">${t.arah}</span></td><td><span class="badge ${bc}">${t.tipe}</span></td><td>${t.entry?'$'+fmtN(t.entry):'—'}</td><td>${t.close?'$'+fmtN(t.close):'—'}</td><td>$${fmtN(t.lot)}</td><td class="${isProfit?'profit-pos':'profit-neg'}">${isProfit?'+':''}$${fmtN(p,2)}</td><td style="color:var(--neon-cyan)">$${fmtN(running)}</td><td class="${isProfit?'profit-pos':'profit-neg'}">${roi}%</td><td style="font-size:10px;color:var(--text-dim)">${t.note||'—'}</td><td><button onclick="deleteTrade(${t.id})" style="background:none;border:1px solid rgba(255,0,110,0.3);color:var(--neon-pink);border-radius:5px;padding:2px 7px;cursor:pointer;font-size:10px">✕</button></td></tr>`;
-}).join('');
-}
-function clearForm(){['f_entry','f_close','f_lot','f_profit','f_note'].forEach(id=>document.getElementById(id).value='');}
-function saveTrades(){try{localStorage.setItem('btc_trades',JSON.stringify(trades));}catch(e){}}
-function handleUpload(e){
-const file=e.target.files[0];if(!file)return;
-const reader=new FileReader();
-reader.onload=ev=>{
-try{
-const wb=XLSX.read(ev.target.result,{type:'binary'});
-const ws=wb.Sheets[wb.SheetNames[0]];
-const rows=XLSX.utils.sheet_to_json(ws,{header:1,defval:''});
-if(rows.length<2){showToast('⚠️ File kosong','pink');return;}
-const headers=rows[0].map(h=>String(h).toLowerCase().trim());
-const findCol=(keys)=>{for(const k of keys){const idx=headers.findIndex(h=>h.includes(k));if(idx>=0)return idx;}return-1;};
-const cm={tanggal:findCol(['tanggal','date']),arah:findCol(['arah','direction']),tipe:findCol(['tipe','type','action']),entry:findCol(['entry','harga entry']),close:findCol(['close','harga close','exit']),lot:findCol(['lot','size']),profit:findCol(['profit','pnl','p/l']),note:findCol(['catatan','note'])};
-const loaded=[];
-for(let i=1;i<rows.length;i++){
-const r=rows[i];if(!r||r.every(c=>c===''))continue;
-const exDate=v=>{if(!v)return'';if(typeof v==='number'){const d=new Date((v-25569)*86400000);return d.toISOString().split('T')[0];}return String(v);};
-loaded.push({id:Date.now()+i,tanggal:cm.tanggal>=0?exDate(r[cm.tanggal]):'',arah:cm.arah>=0?String(r[cm.arah]).toUpperCase():'LONG',tipe:cm.tipe>=0?String(r[cm.tipe]).toUpperCase():'ENTRY',entry:cm.entry>=0?parseFloat(r[cm.entry])||0:0,close:cm.close>=0?parseFloat(r[cm.close])||0:0,lot:cm.lot>=0?parseFloat(r[cm.lot])||0:0,profit:cm.profit>=0?parseFloat(r[cm.profit])||0:0,note:cm.note>=0?String(r[cm.note]||''):''});
-}
-trades=loaded;saveTrades();renderTable();recalcAll();showToast('✅ '+loaded.length+' trade diimport!');
-}catch(err){showToast('❌ Error: '+err.message,'pink');}
-};
-reader.readAsBinaryString(file);e.target.value='';
-}
-function downloadExcel(){
-const modal=parseFloat(document.getElementById('modalAwal').value)||1000;
-let running=modal;
-const data=[['Tanggal','Arah','Tipe','Harga Entry','Harga Close','Lot ($)','Profit/Loss ($)','Modal Aktif ($)','ROI %','Catatan']];
-trades.forEach(t=>{running+=(parseFloat(t.profit)||0);const roi=t.lot?((parseFloat(t.profit)||0)/t.lot*100).toFixed(2):'0.00';data.push([t.tanggal,t.arah,t.tipe,t.entry||'',t.close||'',t.lot||0,t.profit||0,running.toFixed(2),roi,t.note||'']);});
-const ws=XLSX.utils.aoa_to_sheet(data);
-ws['!cols']=[12,8,16,14,14,10,14,16,8,20].map(w=>({wch:w}));
-const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Trade Log');
-const tp=parseFloat(document.getElementById('targetBulan').value)||15;
-let proj=modal+trades.reduce((s,t)=>s+(parseFloat(t.profit)||0),0);
-const wins=trades.filter(t=>(parseFloat(t.profit)||0)>0).length;
-const s2=[['Ringkasan',''],['Modal Awal',modal],['Total Profit',trades.reduce((s,t)=>s+(parseFloat(t.profit)||0),0).toFixed(2)],['Modal Aktif',(modal+trades.reduce((s,t)=>s+(parseFloat(t.profit)||0),0)).toFixed(2)],['Total Trades',trades.length],['Win',wins],['Loss',trades.length-wins],['Win Rate',trades.length?Math.round(wins/trades.length*100)+'%':'0%'],['Target/Bulan',tp+'%']];
-const ws2=XLSX.utils.aoa_to_sheet(s2);XLSX.utils.book_append_sheet(wb,ws2,'Ringkasan');
-XLSX.writeFile(wb,'BTC_Trade_Log_'+new Date().toISOString().split('T')[0]+'.xlsx');showToast('⬇️ Excel didownload!');
-}
-function downloadTemplate(){
-const data=[['Tanggal','Arah','Tipe','Harga Entry','Harga Close','Lot ($)','Profit/Loss ($)','Modal Aktif ($)','ROI %','Catatan'],['2024-01-01','LONG','ENTRY','67420','','100','','','','Trade pertama'],['2024-01-01','LONG','CLOSE TP1','67420','67757','100','3.37','','','TP1 hit +0.5%'],['2024-01-02','LONG','ENTRY','66500','','100','','','','Entry baru'],['2024-01-02','LONG','AVERAGE DOWN','66500','','200','','','','Avg down -2500 poin'],['','','','','','','','','',''],['--- PETUNJUK ---','','','','','','','','',''],['Arah:','LONG atau SHORT','','','','','','','',''],['Tipe:','ENTRY | AVERAGE DOWN | CLOSE TP1 | CLOSE TP2 | CLOSE TP3 | CLOSE SL','','','','','','','',''],['Lot:','Modal ÷ Pembagi (1000÷10=$100)','','','','','','','','']];
-const ws=XLSX.utils.aoa_to_sheet(data);ws['!cols']=[12,8,16,14,14,10,14,16,8,30].map(w=>({wch:w}));
-const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Template');XLSX.writeFile(wb,'Template_BTC_Trading.xlsx');showToast('📋 Template didownload!');
-}
-function fmtN(n,dec=0){if(isNaN(n))return'0';return parseFloat(n).toLocaleString('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec});}
-function showToast(msg,type='green'){const t=document.getElementById('toast');t.textContent=msg;t.style.borderColor=type==='pink'?'var(--neon-pink)':'var(--neon-green)';t.style.color=type==='pink'?'var(--neon-pink)':'var(--neon-green)';t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
-function animateTicker(){setInterval(()=>{const base=parseFloat(document.getElementById('hargaEntry').value)||67420;const delta=(Math.random()-0.5)*200;const price=(base+delta).toFixed(0);const changePct=(delta/base*100).toFixed(2);const el=document.getElementById('btcPrice');const chEl=document.getElementById('btcChange');if(el)el.textContent='$'+parseInt(price).toLocaleString();if(chEl){chEl.textContent=(delta>=0?'+':'')+changePct+'%';chEl.className='ticker-change '+(delta>=0?'pos':'neg');}},3000);}
-</script>
-</body>
-</html>
+<div style="font-family:'Orbitron';font-size:10
